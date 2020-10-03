@@ -1,10 +1,235 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <style>
+        .class-card_div-margin {
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+
+        .class-card-top-margin {
+            margin-top: 2%;
+        }
+
+        .class-img-margin {
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+    </style>
 </head>
 <body>
+<div class="bg-dark">
 
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                History of The Internet
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="Internet Invention.html">The Invention of the Internet</a>
+                <a class="dropdown-item" href="Browser Wars.html">Browser Wars</a>
+                <a class="dropdown-item" href="Internet Search.html">Internet Search</a>
+                <a class="dropdown-item" href="DotcomBubble.html">Dot Com Bubble</a>
+                <a class="dropdown-item" href="People Part.html">Important People</a>
+                <a class="dropdown-item" href="Internet Website History.html">Website History</a>
+            </div>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink1" role="button"
+               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                How Internet Works
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
+                <a class="dropdown-item" href="DomainNames_and_ICANN.html">Domain names and ICANN</a>
+                <a class="dropdown-item" href="IP_addresses.html">IP Addresses</a>
+                <a class="dropdown-item" href="Packets_and_Routing.html">Packets and Routing</a>
+                <a class="dropdown-item" href="DNS.html">Domain Name System</a>
+                <a class="dropdown-item" href="HTTP_HTTPS.html">HTTP and HTTPS Protocols</a>
+                <a class="dropdown-item" href="W3c.html">W3C</a>
+                <a class="dropdown-item" href="HTML_and_CSS.html">HTML and CSS</a>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="Team.html">Team</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="About.html">About us</a>
+        </li>
+    </ul>
+</div>
+<hr>
+<!--<div>-->
+<!--    <div class="class-img-margin">-->
+<!--        <img src="https://image.shutterstock.com/image-illustration/data-highway-illustration-blurry-green-260nw-376786408.jpg"-->
+<!--             style="width: 1500px; height:400px" alt="...">-->
+<!--    </div>-->
+<!--    <br>-->
+<!--    <div class="class-card_div-margin">-->
+<!--        <h1>Network Packets</h1>-->
+<!--        <hr>-->
+<!--        <p>Packets are modest-sized buffers of data, transmitted as a unit through some shared set of links. Of-->
+<!--            necessity,-->
+<!--            packets need to be prefixed with a header containing delivery information. In the common case known as-->
+<!--            datagram forwarding, the header contains a destination address; headers in networks using so-called-->
+<!--            virtual-circuit forwarding contain instead an identifier for the connection. Almost all networking today is-->
+<!--            packet-based.-->
+<!--        </p>-->
+<!--        <p>-->
+<!--            Each packet is then sent off to its destination by the best available route &#45;&#45; a route that might be taken-->
+<!--            by all the other packets in the message or by none of the other packets in the message. This makes the-->
+<!--            network more efficient. First, the network can balance the load across various pieces of equipment on a-->
+<!--            millisecond-by-millisecond basis. Second, if there is a problem with one piece of equipment in the network-->
+<!--            while a message is being transferred, packets can be routed around the problem, ensuring the delivery of the-->
+<!--            entire message-->
+<!--        </p>-->
+<!--        <h4>Structure of Packet</h4>-->
+<!--        <br>-->
+<!--        <div class="class-card_div-margin">-->
+<!--            <div class="row" style="height: 40px; text-align: center; color: white">-->
+<!--                <div class="col-sm-3" style="background-color:blue; padding-top: 5px">-->
+<!--                    <strong>Header</strong>-->
+<!--                </div>-->
+<!--                <div class="col-sm-3" style="background-color:green; padding-top: 5px">-->
+<!--                    <strong>Payload</strong>-->
+<!--                </div>-->
+<!--                <div class="col-sm-3" style="background-color:rebeccapurple; padding-top: 5px">-->
+<!--                    <strong>Trailer</strong>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="row" style="height: 40px; text-align: center; color: white; margin-top: 2px">-->
+<!--                <div class="col-sm-3" style="background-color:blue; padding-top: 5px">-->
+<!--                    <strong>96 bits</strong>-->
+<!--                </div>-->
+<!--                <div class="col-sm-3" style="background-color:green; padding-top: 5px">-->
+<!--                    <strong>896 bits</strong>-->
+<!--                </div>-->
+<!--                <div class="col-sm-3" style="background-color:rebeccapurple; padding-top: 5px">-->
+<!--                    <strong>32 bits</strong>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <br>-->
+<!--        <h5><strong>Header</strong></h5>-->
+<!--        <p>-->
+<!--            The header contains instructions about the data carried by the packet.These may contains length of-->
+<!--            packet,packet number,protocol,destination address and origination address.<br>-->
+<!--            <strong>1. Length of Packet</strong><br>-->
+<!--            Some networks have fixed-length packets, while others rely on the header to contain this information.<br>-->
+<!--            <strong>2. Synchronization</strong><br>-->
+<!--            Few bits that help the packet match up to the network.<br>-->
+<!--            <strong>3. Packet Number</strong><br>-->
+<!--            It is the number which identifies packet uniquely.<br>-->
+<!--            <strong>4. Protocol</strong><br>-->
+<!--            The protocol defines what type of packet is being transmitted: e-mail, Web page, streaming video.<br>-->
+<!--            <strong>5. Payload</strong><br>-->
+<!--            Also called the body or data of a packet. This is the actual data that the packet is delivering to the-->
+<!--            destination. If a packet is fixed-length, then the payload may be padded with blank information to make it-->
+<!--            the right size.<br>-->
+<!--            <strong>6. Trailer</strong><br>-->
+<!--            The trailer, sometimes called the footer, typically contains a couple of bits that tell the receiving device-->
+<!--            that it has reached the end of the packet. It may also have some type of error checking. The most common-->
+<!--            error checking used in packets is Cyclic Redundancy Check (CRC).<br>-->
+<!--        </p>-->
+<!--        <h5><strong>Example</strong></h5>-->
+<!--        <p>-->
+<!--            Let's say that you send an e-mail to a friend. The e-mail is about 4,000 bits (4 kilobits) in size. The-->
+<!--            network you send it over uses fixed-length packets of 1,024 bits (1 kilobit). The header of each packet is-->
+<!--            96 bits long and the trailer is 32 bits long, leaving 896 bits for the payload. To break the 4,000 bits of-->
+<!--            message into packets, you will need four packets (divide 4,000 by 896). Four packets will contain 896 bits-->
+<!--            of payload and the fifth will have 416 bits. Here is what one of the four packets would contain:-->
+
+<!--            Each packet's header will contain the proper protocols, the originating address (the IP address of your-->
+<!--            computer), the destination address (the IP address of the computer where you are sending the e-mail) and the-->
+<!--            packet number.-->
+<!--        </p>-->
+<!--    </div>-->
+<!--    <br>-->
+<!--</div>-->
+
+
+<!--<div>-->
+
+<!--    <div class="class-card_div-margin">-->
+<!--        <h1>Network Routing</h1>-->
+<!--        <hr>-->
+<!--        <p>-->
+<!--            Network routing is the process of selecting a path across one or more networks. The principles of routing-->
+<!--            can apply to any type of network, from telephone networks to public transportation. In packet-switching-->
+<!--            networks, such as the Internet, routing selects the paths for Internet Protocol (IP) packets to travel from-->
+<!--            their origin to their destination. These Internet routing decisions are made by specialized pieces of-->
+<!--            network hardware called routers-->
+<!--        </p>-->
+<!--        <h5><strong>How does routing work?</strong></h5>-->
+<!--        <p>-->
+<!--            Routers refer to internal routing tables to make decisions about how to route packets along network paths. A-->
+<!--            routing table records the paths that packets should take to reach every destination that the router is-->
+<!--            responsible for. Think of train timetables, which train passengers consult to decide which train to catch.-->
+<!--            Routing tables are like that, but for network paths rather than trains.</p>-->
+
+<!--        <p>Routers work in the following way: when a router receives a packet, it reads the headers of the packet to-->
+<!--            see its intended destination, like the way a train conductor may check a passenger's tickets to determine-->
+<!--            which train they should go on. It then determines where to route the packet based on information in its-->
+<!--            routing tables.</p>-->
+
+<!--        <p>Routers do this millions of times a second with millions of packets. As a packet travels to its destination,-->
+<!--            it may be routed several times by different routers.</p>-->
+
+<!--        <p>Routing tables can either be static or dynamic. Static routing tables do not change. A network administrator-->
+<!--            manually sets up static routing tables. This essentially sets in stone the routes data packets take across-->
+<!--            the network, unless the administrator manually updates the tables.</p>-->
+
+<!--        <p>Dynamic routing tables update automatically. Dynamic routers use various routing protocols (see below) to-->
+<!--            determine the shortest and fastest paths. They also make this determination based on how long it takes-->
+<!--            packets to reach their destination — similar to the way Google Maps, Waze, and other GPS services determine-->
+<!--            the best driving routes based on past driving performance and current driving conditions.-->
+
+<!--            Dynamic routing requires more computing power, which is why smaller networks may rely on static routing. But-->
+<!--            for medium-sized and large networks, dynamic routing is much more efficient.-->
+<!--        </p>-->
+<!--    </div>-->
+<!--    <div class="class-img-margin">-->
+<!--        <img src="https://image.shutterstock.com/image-vector/route-through-network-600w-56992699.jpg"-->
+<!--             style="width: 1500px; height:400px" alt="...">-->
+<!--    </div>-->
+<!--    <hr>-->
+<!--</div>-->
+
+<div class="bg-dark" style="width: 100%">
+    <footer class="container" style="width: 100%">
+        <p class="float-right"><a href="#">Back to top</a></p>
+        <p class="text-white">&copy; 2020 Company, Inc. &middot; Privacy &middot; Terms
+        </p>
+    </footer>
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
