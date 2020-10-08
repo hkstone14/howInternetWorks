@@ -75,6 +75,77 @@
     </ul>
 </div>
 <hr>
+<div>
+    <div class="class-img-margin">
+        <img src="https://image.shutterstock.com/image-vector/dns-domain-name-system-business-600w-1782312755.jpg"
+             style="width: 1500px; height:400px" alt="...">
+    </div>
+    <br>
+    <div class="class-card_div-margin">
+        <h1>Domain Name System</h1>
+        <hr>
+        <p>
+            The Domain Name System (DNS) is the phonebook of the Internet. Humans access information online through
+            domain names, like nytimes.com or espn.com. Web browsers interact through Internet Protocol (IP) addresses.
+            DNS translates domain names to IP addresses so browsers can load Internet resources.<br>
+
+            Each device connected to the Internet has a unique IP address which other machines use to find the device.
+            DNS servers eliminate the need for humans to memorize IP addresses such as 192.168.1.4 (in IPv4), or more
+            complex newer alphanumeric IP addresses such as 2400:cb00:2048:1::d629:c7a2 (in IPv6).
+        </p>
+        <h5><strong>A Brief History of the DNS</strong></h5>
+        <p>
+            Thirty years ago, when the Internet was still in its infancy when you wanted to visit a website you had to
+            know the IP address of that site. That’s because computers are and were only able to communicate using
+            numbers.<br>
+
+            This is an IP address: 127.33.54.200.
+            It’s long, hard to remember, and we (humans, I presume) are not robots. We needed a way to translate
+            computer-readable information into human-readable. And it had to be fast, lightweight, and scalable.<br>
+
+            In the early 1980’s, Paul Mockapetris came up with a system that automatically mapped IP addresses to domain
+            names.. and the DNS was born. This same system still serves as the backbone of the modern Internet, today.
+        </p>
+        <h5><strong>How DNS works?</strong></h5>
+        <p>
+            We already know that it maps IP addresses to domain names, but where is this information stored? On
+            nameservers!
+
+            Nameservers store DNS records which are the actual file that says “this domain” maps to “this IP address”.
+            So is there a room somewhere that has all the nameservers and DNS records for every site on the Internet?
+            No… that would be ridiculous.<br>
+
+            They are actually distributed all around the world. These nameservers are called the root nameservers and
+            instead of storing every domain ever, they store the locations of the TLD (top level domains).
+
+            TLD’s are the two or three character like .com that end a domain name. Each TLD has their own set of
+            nameservers that store the information that says who is authoritative for storing the DNS records for that
+            domain.<br>
+
+            The authoritative nameserver is typically the DNS provider or the DNS registrar (like GoDaddy that offers
+            both DNS registration and hosting). And here we can find the DNS record that maps example.com to the IP
+            address 127.66.122.88.
+        </p>
+        <h5><strong>Example</strong></h5>
+        <p>
+            Let's say that you type the URL <strong>www.mywebsite1425.com</strong> into your browser. The browser contacts a DNS server
+            to get the IP address. A DNS server would start its search for an IP address by contacting one of the root
+            DNS servers. The root servers know the IP addresses for all of the DNS servers that handle the top-level
+            domains (.COM, .NET, .ORG, etc.). Your DNS server would ask the root for www.mywebsite1425.com, and the root
+            would say, "I don't know the IP address for www.mywebsite1425.com, but here's the IP address for the .COM
+            DNS server."<br>
+
+            Your name server then sends a query to the .COM DNS server asking it if it knows the IP address for
+            www.mywebsite1425.com. The DNS server for the COM domain knows the IP addresses for the name servers
+            handling the www.mywebsite1425.com domain, so it returns those.<br>
+
+            Your name server then contacts the DNS server for www.mywebsite1425.com and asks if it knows the IP address
+            for www.mywebsite1425.com. It actually does, so it returns the IP address to your DNS server, which returns
+            it to the browser, which can then contact the server for www.mywebsite1425.com to get a Web page.
+        </p>
+    </div>
+</div>
+<hr>
 <div class="bg-dark" style="width: 100%">
     <footer class="container" style="width: 100%">
         <p class="float-right"><a href="#">Back to top</a></p>
