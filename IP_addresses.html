@@ -82,7 +82,98 @@
     </div>
     <br>
     <div class="class-card_div-margin">
+        <h1>IP Address</h1>
+        <hr>
+        <p>
+            IP stands for Internet Protocol and describes a set of standards and requirements for creating and
+            transmitting data packets, or datagrams, across networks. The Internet Protocol (IP) is part of the Internet
+            layer of the Internet protocol suite. In the OSI model, IP would be considered part of the network layer. IP
+            is traditionally used in conjunction with a higher-level protocol, most notably TCP. The IP standard is
+            governed by RFC 791.
+        </p>
+        <h5>How IP address works?</h5>
+        <p>
+            An IP address allows computers to send and receive data over the internet. Most IP addresses are purely
+            numerical, but as internet usage grows, letters have been added to some addresses.<br>
 
+            IP is designed to work over a dynamic network. This means that IP must work without a central directory or
+            monitor, and that it cannot rely upon specific links or nodes existing. IP is a connectionless protocol that
+            is datagram-oriented., so each packet must contain the source IP address, destination IP address, and other
+            data in the header to be successfully delivered.<br>
+
+            Combined, these factors make IP an unreliable, best effort delivery protocol. Error correction is handled by
+            upper level protocols instead. These protocols include TCP, which is a connection-oriented protocol, and
+            UDP, which is a connectionless protocol.Most internet traffic is TCP/IP.<br>
+        </p>
+        <h6>Example:</h6>
+        <p>
+            An IP address can be compared to a Social Security Number (SSN) since each one is completely unique to the
+            computer or user it is assigned to. The creation of these numbers allows routers to identify where they are
+            sending information on the internet. They also make sure that the correct devices are receiving what is
+            being sent. Much like the post office needs a mailing address to deliver a package, a router needs an IP
+            address to deliver to the web address requested.
+        </p>
+        <h5>IP Versions</h5>
+        <p>
+            There are two versions of IP in use today, IPv4 and IPv6. The original IPv4 protocol is still used today on
+            both the internet, and many corporate networks. However, the IPv4 protocol only allowed for 232 addresses.
+            This, coupled with how addresses were allocated, led to a situation where there would not be enough unique
+            addresses for all devices connected to the internet.
+        <h6>IPv6</h6>
+        IPv6 was developed by the Internet Engineering Task Force (IETF), and was formalized in 1998. This upgrade
+        substantially increased the available address space and allowed for 2128 addresses. In addition, there were
+        changes to improve the efficiency of IP packet headers, as well as improvements to routing and security.
+        <h6>IPv4</h6>
+        IPv4 addresses are actually 32-bit binary numbers, consisting of the two subaddresses (identifiers)
+        mentioned above which, respectively, identify the network and the host to the network, with an imaginary
+        boundary separating the two. An IP address is, as such, generally shown as 4 octets of numbers from 0-255
+        represented in decimal form instead of binary form.
+
+        For example, the address 168.212.226.204 represents the 32-bit binary number
+        10101000.11010100.11100010.11001100.
+
+        The binary number is important because that will determine which class of network the IP address belongs to.
+
+
+        An IPv4 address is typically expressed in dotted-decimal notation, with every eight bits (octet) represented
+        by a number from one to 255, each separated by a dot. An example IPv4 address would look like this:
+        <strong>192.168.16.47</strong><br>
+        IPv4 addresses are composed of two parts. The first numbers in the address specify the network, while the latter
+        numbers specify the specific host. A subnet mask specifies which part of an address is the network part, and
+        which part addresses the specific host.<br>
+        <div class="class-card_div-margin">
+            <div class="row" style="height: 40px; text-align: center">
+                <div class="col-sm-8" style="background-color:lightgray; padding-top: 5px">
+                   <strong>32 Bits IP Address</strong>
+                </div>
+            </div>
+            <div class="row" style="height: 40px; text-align: center; color: white; margin-top: 3px">
+                <div class="col-sm-2" style="background-color:blue; padding-top: 5px">
+                    <strong>Network(8 bits)</strong>
+                </div>
+                <div class="col-sm-6" style="background-color:lightblue; padding-top: 5px; color: black">
+                    <strong>Host(24 bits)</strong>
+                </div>
+            </div>
+            <div class="row" style="height: 40px; text-align: center; color: white; margin-top: 3px">
+                <div class="col-sm-4" style="background-color:blue; padding-top: 5px">
+                    <strong>Network(16 bits)</strong>
+                </div>
+                <div class="col-sm-4" style="background-color:lightblue; padding-top: 5px; color: black">
+                    <strong>Host(16 bits)</strong>
+                </div>
+            </div>
+            <div class="row" style="height: 40px; text-align: center; color: white; margin-top: 3px">
+                <div class="col-sm-6" style="background-color:blue; padding-top: 5px">
+                    <strong>Network(24 bits)</strong>
+                </div>
+                <div class="col-sm-2" style="background-color:lightblue; padding-top: 5px; color: black">
+                    <strong>Host(8 bits)</strong>
+                </div>
+            </div>
+        </div>
+
+        </p>
     </div>
 </div>
 
